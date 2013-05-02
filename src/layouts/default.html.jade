@@ -1,0 +1,83 @@
+- var scripts = getBlock('scripts')
+- var styles = getBlock('styles')
+
+//- User
+- styles.add(["/css/style.css"])
+- scripts.add(["/js/vendor.min.js"])
+- scripts.add(["/js/custom.js"])
+
+doctype 5
+html(lang="en")
+	head
+
+		// Meta
+		meta(charset="utf-8")
+		meta(http-equiv="content-type", content="text/html; charset=utf-8")
+		// Styles
+		!= styles.toHTML()
+		script(src="js/head.min.js")
+		//-
+			Use the .htaccess and remove these lines to avoid edge case issues.
+			More info: h5bp.com/i/378
+		meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+
+		//- Our site title and description
+		title= getPreparedTitle()
+		meta(name="description", content=getPreparedDescription())
+		meta(name="keywords", content=getPreparedKeywords())
+		meta(name="author", content=site.author || '')
+
+		//- Output DocPad produced meta elements
+		!= getBlock('meta').toHTML()
+
+		// Facebook Metadata /
+		meta(property='fb:page_id', content='')
+		meta(property='og:image', content='')
+		meta(property='og:description', content='')
+		meta(property='og:title', content='')
+
+		// Google+ Metadata /
+		meta(itemprop='name', content='')
+		meta(itemprop='description', content='')
+		meta(itemprop='image', content='')
+
+		//- Mobile viewport optimized: h5bp.com/viewport
+		meta(name="viewport", content="width=device-width")
+
+		// Icons
+		link(rel="shortcut icon", href="ico/favicon.ico")
+		link(rel="apple-touch-icon-precomposed", sizes="144x144", href="ico/apple-touch-icon-144-precomposed.png")
+		link(rel="apple-touch-icon-precomposed", sizes="114x114", href="ico/apple-touch-icon-114-precomposed.png")
+		link(rel="apple-touch-icon-precomposed", sizes="72x72", href="ico/apple-touch-icon-72-precomposed.png")
+		link(rel="apple-touch-icon-precomposed", href="ico/apple-touch-icon-57-precomposed.png")
+
+
+	body
+		nav.main
+			.wrap
+				ul
+					li
+						a(href="/") Home
+					each doc in getCollection('pages').toJSON()
+						- clazz = (document.url === doc.url) ? 'active' : null
+						li(typeof="sioc:Page", about=doc.url, class=clazz)
+							a(href=doc.url, property="dc:title")= doc.title
+		// Markup
+		header(role='banner').main
+
+		main(role='main')
+			.wrap
+				!= content
+		hr
+		footer
+			.wrap
+				p
+					| Love,&nbsp;
+					a(href="http://kyl.a") Kyla
+				//-
+					p.left= site.copyright
+				p.
+					This website was last updated at #{site.date}
+
+		// Scripts
+		!= scripts.toHTML()

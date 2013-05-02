@@ -1,0 +1,8 @@
+{
+  "min": {
+    "js": {
+      "src": ["src/documents/js/*.js"],
+      "dest": "out/js/vendor.min.js"
+    }
+  }
+}

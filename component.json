@@ -1,0 +1,16 @@
+{
+  "name": "Stylus Framework",
+  "version": "1.0.0",
+  "main": "public/css/style.css",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt",
+    "**/*.ft",
+    "**/*.taskpaper"
+  ],
+  "dependencies": {
+    "headjs": "*"
+  , "zepto": "*"
+  , ".gitignore": "git://gist.github.com/5059919.git"
+  }
+}
