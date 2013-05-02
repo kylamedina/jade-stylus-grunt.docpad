@@ -11,8 +11,8 @@ Stylus includes Nib, Normalize v2.1.0, and a slightly altered Semantic.gs. A Bow
 1. Clone the project and run the server
 
 	``` bash
-	git clone git://github.com/kylamedina/CUSTOM.docpad.git
-	cd CUSTOM.docpad
+	git clone git://github.com/kylamedina/jade-stylus-grunt.docpad.git
+	cd jade-stylus-grunt.docpad
 	npm install
 	docpad run
 	```
