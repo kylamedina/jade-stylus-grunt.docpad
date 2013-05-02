@@ -23,7 +23,9 @@ Stylus includes Nib, Normalize v2.1.0, and a slightly altered Semantic.gs. A Bow
 
 ## Grunt
 
-Grunt will minify and concatenate all files in
+Grunt will minify and concatenate all files in src/documents/js and create out/js/vendor.min.js
+
+It can also minify CSS but I use Stylus so that's not really necessary.
 
 #### `grunt-config.json`
 - This file is contains the object passed to `grunt.initConfig` in `grunt.js`. It has been put into its own file since it is used in `docpad.coffee` to build file lists for inclusion in the layout and deleting unused files.
