@@ -1,11 +1,13 @@
-
-
-// margin-bottom using rem with fallback
-line(n)
-	margin: 0 0 (n * (base-line-height px)) 0
-	margin: 0 0 (n * (base-line-height / rembase) rem) 0
-
-// This is a function and by convention, starts with hyphen
+// It calculates line-height when flag is true
+// font-size must be declared with px
+fs(n, flag = true)
+	font-size: n px
+	font-size: (remove-unit(n) / rembase) rem
+	if flag
+		line-height: -getlineheight()
+	else
+		error('Use px as unit')
+		// This is a function and by convention, starts with hyphen
 -getlineheight()
 	return remove-unit(@font-size) * (base-line-height / (remove-unit(@font-size) * rembase))
 
