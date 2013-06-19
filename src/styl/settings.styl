@@ -1,0 +1,77 @@
+// Variables ====================================
+
+// Media Queries
+desktop = 'only screen and (min-width: 64em)'
+tablet = 'only screen and (min-width: 37.5em) and (max-width: 64em), only screen and (min-device-width: 481px) and (max-device-width: 1024px)'
+mob = 'only screen and (max-width: 37.5em), only screen and (min-device-width: 320px) and (max-device-width: 480px)'
+
+// Fonts
+@import url(http://fonts.googleapis.com/css?family=PT\+Mono);
+@import url(http://fonts.googleapis.com/css?family=PT\+Sans:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=PT\+Serif:400,400italic,700,700italic);
+
+$sans-serif = 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$serif = 'PT Serif', Georgia, Times, 'Times New Roman', serif;
+$mono = 'PT Mono', 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+
+
+
+// Colors
+white = hsla(0%, 0%, 100%, 1.0)
+black = hsla(0%, 0%, 0%, 1.0)
+gray  = hsla(0%, 0%, 49%, 1.0)
+lightgray = lighten(gray,90%)
+darkgray = darken(gray,30%)
+offwhite = hsla(0%, 0%, 98%, 1.0)
+
+bgColor = offwhite
+text1 = black
+text2 = white
+
+primary = hsla(14%, 100%, 82%, 1.0)
+secondary = rgba(#399CCC,1)
+tertiary = darken(primary, 30%)
+
+primaryBg = primary
+secondaryBg = secondary
+tertiaryBg = tertiary
+
+tableBackground = offwhite
+tableBorder = gray
+baseBorderRadius = 0px
+tableBackgroundAccent = primary
+tableBackgroundHover = offwhite
+
+successBackground = #58c026
+errorBackground = #ca3838
+warningBackground = #f6b83f
+infoBackground = #868d92
+
+
+
+// Grid Settings ================================
+
+// Defaults which you can freely override
+column-width = 60px
+gutter-width = 20px
+colNum = 16
+
+// Utility variable — you should never need to modify this
+_gridsystem-width = (column-width + gutter-width) * colNum
+
+// Set @total-width to 100% for a fluid layout
+total-width = 100%
+
+gap = total-width * (((gutter-width * 0.5) / _gridsystem-width ) * 2)
+
+// Correcting percentage-to-pixel rounding errors in IE6 & 7
+// See http://tylertate.com/blog/2012/01/05/subpixel-rounding.html
+// Override @min with the minimum width of your layout
+min-width = 1440px
+correction = (((0.5 / min-width) * 100) * 1%)
+
+
+
+// Typography Settings ==========================
+// Can be found in ui/typography.styl
+

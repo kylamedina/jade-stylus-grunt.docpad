@@ -1,0 +1,42 @@
+// Form Elements ========================================
+
+form
+	fieldset
+		//border none
+		padding 1rem
+		margin 0
+
+	label
+		display inline-block
+		font-size basefont
+		vertical-align top
+
+input[type='text'],input[type='email'],input[type='tel'],input[type='url'],input[type='password'],input[type='search'],textarea
+	padding 4px
+	border 1px solid gray
+	display inline-block
+	font-size basefont
+	//-webkit-appearance none
+
+btn(btnColor = primary,outline = false)
+	background-color primary
+	padding 16px 20px
+	color white
+	font-family $sans-serif
+	font-weight 600
+	letter-spacing 1px
+	border none
+	margin 0.25rem
+	&:active
+		position relative
+		top 1px
+	if outline
+		padding 7px
+		background-color white
+		border 3px solid primary
+		color primary
+	&[disabled=disabled]
+		background-color lighten(gray,50%)
+		color gray
+button,input[type="submit"],input[type="button"],input[type="reset"]
+	btn()

@@ -3,12 +3,13 @@ title: Normalize Test
 layout: page
 pageOrder: 1
 ---
-h1 Heading 1
-h2 Heading 2
-h3 Heading 3
-h4 Heading 4
-h5 Heading 5
-h6 Heading 6
+section
+	h1 Heading 1
+	h2 Heading 2
+	h3 Heading 3
+	h4 Heading 4
+	h5 Heading 5
+	h6 Heading 6
 section
 	h1 Heading 1 (in section)
 	h2 Heading 2 (in section)
@@ -16,17 +17,15 @@ section
 	h4 Heading 4 (in section)
 	h5 Heading 5 (in section)
 	h6 Heading 6 (in section)
-article
-	h1 Heading 1 (in article)
-	h2 Heading 2 (in article)
-	h3 Heading 3 (in article)
-	h4 Heading 4 (in article)
-	h5 Heading 5 (in article)
-	h6 Heading 6 (in article)
-header
-	hgroup
-		h1 Heading 1 (in hgroup)
-		h2 Heading 2 (in hgroup)
+section
+	article
+		h1 Heading 1 (in article)
+		h2 Heading 2 (in article)
+		h3 Heading 3 (in article)
+		h4 Heading 4 (in article)
+		h5 Heading 5 (in article)
+		h6 Heading 6 (in article)
+section
 	nav
 		ul
 			li
@@ -35,288 +34,316 @@ header
 				a(href='#') navigation item #2
 			li
 				a(href='#') navigation item #3
-h1 Text-level semantics
-p(hidden='hidden') This should be hidden in all browsers, apart from IE6
-p
-	| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.
-p
-	| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.
-address Address: somewhere, world
-hr
-hr(style='height: 4px; border: solid #000; border-width: 1px 0;')
-p
-	| The
-	a(href='#') a element
-	| example
-	br
-	| The
-	abbr abbr element
-	| and
-	abbr(title='Title text') abbr element with title
-	| examples
-	br
-	| The
-	b b element
-	| example
-	br
-	| The
-	cite cite element
-	| example
-	br
-	| The
-	code code element
-	| example
-	br
-	| The
-	del del element
-	| example
-	br
-	| The
-	dfn dfn element
-	| and
-	dfn(title='Title text') dfn element with title
-	| examples
-	br
-	| The
-	em em element
-	| example
-	br
-	| The
-	i i element
-	| example
-	br
-	| The img element
-	img(src='http://lorempixel.com/16/16', alt='')
-	| example
-	br
-	| The
-	ins ins element
-	| example
-	br
-	| The
-	kbd kbd element
-	| example
-	br
-	| The
-	mark mark element
-	| example
-	br
-	| The
-	q
-		| q element
-		q inside
-		| a q element
-	| example
-	br
-	| The
-	s s element
-	| example
-	br
-	| The
-	samp samp element
-	| example
-	br
-	| The
-	small small element
-	| example
-	br
-	| The
-	span span element
-	| example
-	br
-	| The
-	strong strong element
-	| example
-	br
-	| The
-	sub sub element
-	| example
-	br
-	| The
-	sup sup element
-	| example
-	br
-	| The
-	u u element
-	| example
-	br
-	| The
-	var var element
-	| example
-h1 Embedded content
-h3 audio
-audio(controls='controls')
-audio
-h3 img
-img(src='http://lorempixel.com/100/100', alt='')
-a(href='#')
-	img(src='http://lorempixel.com/100/100', alt='')
-h3 svg
-svg(width='100px', height='100px')
-	circle(cx='100', cy='100', r='100', fill='#ff0000')
-h3 video
-video(controls='controls')
-video
-h1 Interactive content
-h3 details / summary
-details
-	summary More info
-	p Additional information
-	ul
-		li Point 1
-		li Point 2
-h1 Grouping content
-p
-	| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.
-h3 pre
-pre.
-	\nLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et me.
-pre.
-
-h3 blockquote
-blockquote
+section
+	h1 Text-level semantics
+	p(hidden='hidden') This should be hidden in all browsers, apart from IE6
 	p
-		| Some sort of famous witty quote marked up with a blockquote
-		| and a child p
-		| element.
-blockquote
-	| Even better philosophical quote marked up with just a blockquote
-	| element.
-h3 ordered list
-ol
-	li list item 1
-	li
-		| list item 1
-		ol
-			li list item 2
-			li
-				| list item 2
-				ol
-					li list item 3
-					li list item 3
-			li list item 2
-			li list item 2
-	li list item 1
-	li list item 1
-h3 unordered list
-ul
-	li list item 1
-	li
-		| list item 1
+		| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.
+	p
+		| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.
+	address Address: somewhere, world
+	hr
+	hr(style='height: 4px; border: solid #000; border-width: 1px 0;')
+
+section
+	p
+		| The
+		a(href='#') a element
+		| example
+		br
+		| The
+		abbr abbr element
+		| and
+		abbr(title='Title text') abbr element with title
+		| examples
+		br
+		| The
+		b b element
+		| example
+		br
+		| The
+		cite cite element
+		| example
+		br
+		| The
+		code code element
+		| example
+		br
+		| The
+		del del element
+		| example
+		br
+		| The
+		dfn dfn element
+		| and
+		dfn(title='Title text') dfn element with title
+		| examples
+		br
+		| The
+		em em element
+		| example
+		br
+		| The
+		i i element
+		| example
+		br
+		| The img element
+		img(src='http://lorempixel.com/16/16', alt='')
+		| example
+		br
+		| The
+		ins ins element
+		| example
+		br
+		| The
+		kbd kbd element
+		| example
+		br
+		| The
+		mark mark element
+		| example
+		br
+		| The
+		q
+			| q element
+			q inside
+			| a q element
+		| example
+		br
+		| The
+		s s element
+		| example
+		br
+		| The
+		samp samp element
+		| example
+		br
+		| The
+		small small element
+		| example
+		br
+		| The
+		span span element
+		| example
+		br
+		| The
+		strong strong element
+		| example
+		br
+		| The
+		sub sub element
+		| example
+		br
+		| The
+		sup sup element
+		| example
+		br
+		| The
+		u u element
+		| example
+		br
+		| The
+		var var element
+		| example
+
+section
+	h1 Embedded content
+	h3 audio
+	audio(controls='controls')
+	audio
+section
+	h3 img
+	img(src='http://lorempixel.com/100/100', alt='')
+	a(href='#')
+		img(src='http://lorempixel.com/100/100', alt='')
+
+section
+	h3 svg
+	svg(width='100px', height='100px')
+		circle(cx='100', cy='100', r='100', fill='#ff0000')
+
+section
+	h3 video
+	video(controls='controls')
+	video
+
+section
+	h1 Interactive content
+	h3 details / summary
+	details
+		summary More info
+		p Additional information
 		ul
-			li list item 2
-			li
-				| list item 2
-				ul
-					li list item 3
-					li list item 3
-			li list item 2
-			li list item 2
-	li list item 1
-	li list item 1
-h3 description list
-dl
-	dt Description name
-	dd Description value
-	dt Description name
-	dd Description value
-	dd Description value
-	dt Description name
-	dt Description name
-	dd Description value
-h3 figure
-figure
-	img(src='http://lorempixel.com/400/200', alt='')
-	figcaption Figcaption content
-h1 Tabular data
-table
-	caption Jimi Hendrix - albums
-	thead
-		tr
-			th Album
-			th Year
-			th Price
-	tfoot
-		tr
-			th Album
-			th Year
-			th Price
-	tbody
-		tr
-			td Are You Experienced
-			td 1967
-			td $10.00
-		tr
-			td Axis: Bold as Love
-			td 1967
-			td $12.00
-		tr
-			td Electric Ladyland
-			td 1968
-			td $10.00
-		tr
-			td Band of Gypsys
-			td 1970
-			td $12.00
-h1 Forms
-form
-	fieldset
-		legend
-			| Inputs as descendents of labels (form legend). This doubles up as a long legend that can test word wrapping.
+			li Point 1
+			li Point 2
+
+section
+	h1 Grouping content
+		h3 pre
+		pre
+			| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et me.
+		pre
+			| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et me.
+
+section
+	h3 blockquote
+	blockquote
 		p
-			label
-				| Text input
-				input(type='text', value='default value that goes on and on without stopping or punctuation')
-		p
-			label
-				| Email input
-				input(type='email')
-		p
-			label
-				| Search input
-				input(type='search')
-		p
-			label
-				| Tel input
-				input(type='tel')
-		p
-			label
-				| URL input
-				input(type='url', placeholder='http://')
-		p
-			label
-				| Password input
-				input(type='password', value='password')
-		p
-			label
-				| File input
-				input(type='file')
-		p
-			label
-				| Radio input
-				input(type='radio', name='rad')
-		p
-			label
-				| Checkbox input
-				input(type='checkbox')
-		p
-			label
-				input(type='radio', name='rad')
-				| Radio input
-		p
-			label
-				input(type='checkbox')
-				| Checkbox input
-		p
-			label
-				| Select field
-				select
-					option Option 01
-					option Option 02
-		p
-			label
-				| Textarea
-				textarea(cols='30', rows='5') Textarea text
+			| Some sort of famous witty quote marked up with a blockquote
+			| and a child p
+			| element.
+	blockquote
+		| Even better philosophical quote marked up with just a blockquote
+		| element.
+
+section
+	h3 ordered list
+	ol
+		li list item 1
+		li
+			| list item 1
+			ol
+				li list item 2
+				li
+					| list item 2
+					ol
+						li list item 3
+						li list item 3
+				li list item 2
+				li list item 2
+		li list item 1
+		li list item 1
+
+section
+	h3 unordered list
+	ul
+		li list item 1
+		li
+			| list item 1
+			ul
+				li list item 2
+				li
+					| list item 2
+					ul
+						li list item 3
+						li list item 3
+				li list item 2
+				li list item 2
+		li list item 1
+		li list item 1
+
+section
+	h3 description list
+	dl
+		dt Description name
+		dd Description value
+		dt Description name
+		dd Description value
+		dd Description value
+		dt Description name
+		dt Description name
+		dd Description value
+
+section
+	h3 figure
+	figure
+		img(src='http://lorempixel.com/400/200', alt='')
+		figcaption Figcaption content
+
+section
+	h1 Tabular data
+	table
+		caption Jimi Hendrix - albums
+		thead
+			tr
+				th Album
+				th Year
+				th Price
+		tfoot
+			tr
+				th Album
+				th Year
+				th Price
+		tbody
+			tr
+				td Are You Experienced
+				td 1967
+				td $10.00
+			tr
+				td Axis: Bold as Love
+				td 1967
+				td $12.00
+			tr
+				td Electric Ladyland
+				td 1968
+				td $10.00
+			tr
+				td Band of Gypsys
+				td 1970
+				td $12.00
+
+section
+	h1 Forms
+	form
+		fieldset
+			legend
+				| Inputs as descendents of labels (form legend). This doubles up as a long legend that can test word wrapping.
+			p
+				label
+					| Text input
+					input(type='text', value='default value that goes on and on without stopping or punctuation')
+			p
+				label
+					| Email input
+					input(type='email')
+			p
+				label
+					| Search input
+					input(type='search')
+			p
+				label
+					| Tel input
+					input(type='tel')
+			p
+				label
+					| URL input
+					input(type='url', placeholder='http://')
+			p
+				label
+					| Password input
+					input(type='password', value='password')
+			p
+				label
+					| File input
+					input(type='file')
+			p
+				label
+					| Radio input
+					input(type='radio', name='rad')
+			p
+				label
+					| Checkbox input
+					input(type='checkbox')
+			p
+				label
+					input(type='radio', name='rad')
+					| Radio input
+			p
+				label
+					input(type='checkbox')
+					| Checkbox input
+			p
+				label
+					| Select field
+					select
+						option Option 01
+						option Option 02
+			p
+				label
+					| Textarea
+					textarea(cols='30', rows='5') Textarea text
+
+section
 	fieldset
 		legend Inputs as siblings of labels
 		p
@@ -363,6 +390,8 @@ form
 		p
 			label(for='t') Textarea
 			textarea#t(cols='30', rows='5') Textarea text
+
+section
 	fieldset
 		legend Clickable inputs and buttons
 		p

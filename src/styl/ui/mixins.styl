@@ -1,0 +1,24 @@
+// Misc
+
+black(opacity)
+	rgba(0,0,0,opacity)
+
+white(opacity)
+	rgba(255,255,255,opacity)
+
+box-emboss(opacity1, opacity2)
+	box-shadow:white(opacity1) 0 1px 0, inset black(opacity2) 0 1px 0;
+
+letterpress(opacity)
+	text-shadow:white(opacity) 0 1px 0;
+
+seam()
+	clear: both
+	display: block
+	height: 0px
+	border-top: 1px solid rgba(black, .12)
+	border-bottom: 1px solid rgba(white, .15)
+
+well()
+	box-shadow: inset 0 1px 5px rgba(black, .14)
+	background-color: off-white
