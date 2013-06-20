@@ -10,7 +10,7 @@
   ],
   "dependencies": {
     "headjs": "*"
-  , "zepto": "*"
+  , "jQuery": "*"
   , ".gitignore": "git://gist.github.com/5059919.git"
   }
 }

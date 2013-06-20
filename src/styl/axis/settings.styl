@@ -1,0 +1,81 @@
+// -------------------------------------------------------
+// Roots global settings variables
+// -------------------------------------------------------
+
+// font options (add your own!)
+helvetica-neue = "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif
+helvetica = "Helvetica Neue", Helvetica, Arial, sans-serif
+georgia = Georgia, Cambria, "Times New Roman", Times, serif
+lucidia-grande = "Lucida Grande", Tahoma, Verdana, Arial, sans-serif
+monospace = unquote("'Bitstream Vera Sans Mono', Consolas, Courier, monospace")
+verdana = Verdana, Geneva, sans-serif
+
+@import url('http://fonts.googleapis.com/css?family=PT\+Mono');
+@import url('http://fonts.googleapis.com/css?family=PT\+Sans:400,400italic,700,700italic');
+@import url('http://fonts.googleapis.com/css?family=PT\+Serif:400,400italic,700,700italic');
+
+sansSerif = 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+Serif = 'PT Serif', Georgia, Times, 'Times New Roman', serif;
+mono = 'PT Mono', 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+
+// default font stack
+font-stack = sansSerif
+font-size = 15
+font-color = #555
+
+// colors
+white = hsla(0%, 0%, 100%, 1.0)
+black = hsla(0%, 0%, 0%, 1.0)
+gray  = hsla(0%, 0%, 49%, 1.0)
+lightgray = lighten(gray,90%)
+darkgray = darken(gray,30%)
+offwhite = hsla(0%, 0%, 98%, 1.0)
+
+bgColor = offwhite
+mainNavColor = white
+text1 = black
+text2 = white
+
+primary = hsla(14%, 100%, 82%, 1.0)
+secondary = rgba(#399CCC,1)
+tertiary = darken(primary, 30%)
+
+primaryBg = primary
+secondaryBg = secondary
+tertiaryBg = tertiary
+
+red = #B44326
+orange = #F2A34F
+yellow = #F8CA5C
+green = #7FC028
+light-blue = #52D7FE
+blue = #00a6fc
+purple = #8E48C2
+white = #fff
+black = #272727
+
+// default color
+default-color = primary
+
+// text hilight color
+hilight-color = blue
+
+// vendor prefixes
+vendors = webkit moz o ms official
+
+// custom image base path for roots mixins
+img-path = '../img/'
+
+// progressive internet explorer (http://css3pie.com/)
+pie-enabled = false
+pie-path = '/pie.htc'
+
+// Media Queries
+desktop = 'only screen and (min-width: 64em)'
+tablet = 'only screen and (min-width: 37.5em) and (max-width: 64em), only screen and (min-device-width: 481px) and (max-device-width: 1024px)'
+mob = 'only screen and (max-width: 37.5em), only screen and (min-device-width: 320px) and (max-device-width: 480px)'
+
+// grid system settings (http://semantic.gs)
+column-width = 60px
+gutter-width = 20px
+columns = 12

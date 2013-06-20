@@ -54,7 +54,7 @@ html(lang="en")
 
 	body
 		nav.main
-			div
+
 				ul
 					li
 						a(href="/") Home
@@ -63,8 +63,6 @@ html(lang="en")
 						li(typeof="sioc:Page", about=doc.url, class=clazz)
 							a(href=doc.url, property="dc:title")= doc.title
 		// Markup
-		header(role='banner').main
-
 		main(role='main')
 			.center
 				!= content
