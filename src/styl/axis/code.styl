@@ -10,13 +10,14 @@
 code(color = primary, invert=false)
   padding: 3px 4px
   color: color
+  white-space: nowrap
   overflow-x scroll
   font-family: mono
   if invert
-    background-color invert(primary)
+    background-color invert(color)
     color invert(text1)
   else
-    background-color primary
+    background-color color
     color text2
   //border: 1px solid #E1E1E8
   //border-radius: 3px
@@ -29,7 +30,7 @@ code(color = primary, invert=false)
 
 pre(color = primary, invert=false)
   display: block
-  padding: 3px 4px
+  padding: 0 16px
   white-space: pre-wrap
   word-break: break-all
   font-family: mono
@@ -52,7 +53,8 @@ code-blocks()
   pre
     pre()
 
-code.inline
-  color primary
-  position relative
+.inline
+  color white
+  padding 0 2px
+  code(concrete)
   line-height 1
